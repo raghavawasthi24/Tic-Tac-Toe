@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;800&family=Solway:wght@700&display=swap');
+.board{
+    width:100vw;
+    height:100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    /* padding: 20px 0; */
+    
+}
+.home{
+    display: grid;
+    grid-template-columns:130px 130px 130px;
+    grid-template-rows: 130px 130px 130px;
+    justify-content: center;
+    align-content: center;
+}
+.sqr{
+    padding:20px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hide{
+    display: none;
+}
+img{
+    width:80px;
+    height:80px;
+}
+p{
+  font-size:50px;
+  margin-bottom:15px;
+  font-family: 'Inter', sans-serif;
+}
+h3{
+    cursor: pointer;
+    border:1px solid white;
+    padding:5px;
+    margin-bottom: 20px;
+}
+h3:hover{
+    background-color: white;
+    color: black;
+}
+@media screen and (max-width:487px){
+    .home{
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px;
+    }
+    img{
+        width:60px;
+        height:60px;
+    }
+    p{
+        font-size: 30px;
+    }
+}
